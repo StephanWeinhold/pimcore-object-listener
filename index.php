@@ -18,6 +18,6 @@
         </section>
     </main>
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js">
-    <script type="text/javascript" src="https://raw.githubusercontent.com/StephanWeinhold/pimcore-object-listener/master/ping.js">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/StephanWeinhold/pimcore-object-listener/master/ping.js"></script>
 </body>
