@@ -14,9 +14,13 @@ var pinger = window.setInterval(function() {
     }).done(function(returnData) {
         if (returnData.success === true) {
             $.each(returnData.data, function(oid, timestamp) {
-                if ($('.object[data-oid="' + oid + '"]').attr('data-latest-version') < timestamp) {
+                var objectContainer = $('.object[data-oid="' + oid + '"]'),
+                    currentTimestamp = Date.now() / 1000 | 0;
+
+                if (objectContainer.attr('data-latest-version') < timestamp) {
                     console.log('Object with ID ' + oid + ' has changed!');
                 }
+                objectContainer.attr('data-latest-version', currentTimestamp);
             });
         }
         else {
