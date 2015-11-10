@@ -1,2 +1,2 @@
 # pimcore-object-listener
-Listens to a pimcore object.
+Listens to one or more pimcore object(s).
