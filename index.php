@@ -12,6 +12,7 @@
                          data-oid="<?= $object->getId(); ?>" 
                          data-latest-version="<?= $object->getVersions()[0]->getDate(); ?>"
                 >
+                </section>
                 <?php
             }
             ?>
